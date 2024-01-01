@@ -21,10 +21,11 @@ export default function Router() {
 					element: <Navigate to={DEFAULT_PATH} replace />,
 					index: true,
 				},
-				{ path: 'landing', element: <LandingPage /> },
+
 				{ path: 'home', element: <Home /> },
 			],
 		},
+		{ path: 'benj_band/homepage', element: <LandingPage /> },
 		{
 			path: '/pages',
 			element: <Pages />,
