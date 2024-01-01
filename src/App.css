@@ -1,0 +1,9 @@
+::-webkit-scrollbar {
+	display: none;
+}
+::-moz-webkit-scrollbar {
+	display: none;
+}
+.settings {
+	scrollbar-width: none;
+}
