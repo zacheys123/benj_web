@@ -14,6 +14,8 @@ const Home = Loadable(lazy(() => import('../pages/Home')));
 const Page404 = Loadable(lazy(() => import('../pages/Page404')));
 const About = Loadable(lazy(() => import('../pages/About')));
 
+const Contact = Loadable(lazy(() => import('../pages/Contact')));
+
 const Reset = Loadable(lazy(() => import('../pages/Reset')));
 
-export { Home, Page404, About, Reset };
+export { Home, Page404, About, Reset, Contact };

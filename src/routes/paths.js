@@ -12,6 +12,7 @@ export const PATH_DASHBOARD = {
 		app: path(ROOTS_DASHBOARD, 'benj_band/homepage'),
 		home: path(ROOTS_DASHBOARD, 'home'),
 		about: path(ROOTS_DASHBOARD, 'about'),
+		contact: path(ROOTS_DASHBOARD, 'pages/contact'),
 		reset: path(ROOTS_DASHBOARD, 'pages/reset'),
 	},
 };

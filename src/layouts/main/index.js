@@ -6,7 +6,7 @@ import { Box, Stack } from '@mui/material';
 
 const index = () => {
 	return (
-		<Box width="100%" height="100%">
+		<Box>
 			<Box className="nav">
 				<Nav />
 			</Box>
@@ -14,6 +14,7 @@ const index = () => {
 				{' '}
 				<Outlet />
 			</Box>
+			<Box className="footer">Footer here</Box>
 		</Box>
 	);
 };

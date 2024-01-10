@@ -7,10 +7,10 @@ import Main_App from '../layouts/main';
 import Pages from '../layouts/pages';
 // // config
 import { DEFAULT_PATH, DEFAULT_PATH_PAGES } from '../config';
-
+import LandingPage from '../components/landing';
 // pages
-import { Home, Page404, About, Reset } from './page_routes';
-import LandingPage from '../pages/LandingPage';
+import { Home, Page404, About, Reset, Contact } from './page_routes';
+
 export default function Router() {
 	return useRoutes([
 		{
@@ -36,14 +36,10 @@ export default function Router() {
 				},
 				{ path: 'reset', element: <Reset /> },
 				{ path: 'about', element: <About /> },
+				{ path: 'contact', element: <Contact /> },
 			],
 		},
 
 		{ path: '*', element: <Page404 /> },
 	]);
-	return (
-		<div>
-			<h2>Hello</h2>
-		</div>
-	);
 }
