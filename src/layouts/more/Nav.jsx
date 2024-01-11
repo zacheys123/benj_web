@@ -4,11 +4,13 @@ import { Stack, Box, Button, Avatar } from '@mui/material';
 import './style.css';
 const Nav = () => {
 	return (
-		<Stack
+		<Box
+			sx={{
+				display: 'flex !important',
+				justifyContent: 'space-between',
+				width: '100%',
+			}}
 			className="classes__nav"
-			direction="flex"
-			justifyContent="space-between"
-			width="100%"
 		>
 			<Box className="classes__logo">
 				<img
@@ -27,16 +29,11 @@ const Nav = () => {
 						Log in
 					</Button>{' '}
 				</Box>
-				<Avatar
-					round={true}
-					maxInitials={1}
-					size={150}
-					className="classes__avatar"
-				>
+				<Avatar size={150} className="classes__avatar">
 					z
 				</Avatar>
 			</Box>
-		</Stack>
+		</Box>
 	);
 };
 
