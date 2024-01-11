@@ -1,0 +1,17 @@
+.classes__mainpage {
+	display: flex;
+	height: 100vh;
+	background: rgb(253, 251, 251);
+
+	.classes__leftside {
+		.h2 {
+			margin-top: 2rem;
+			font-style: italic;
+		}
+		li {
+			font-size: 1.1rem;
+			margin: 2.9rem auto;
+			font-family: 'Poppins';
+		}
+	}
+}

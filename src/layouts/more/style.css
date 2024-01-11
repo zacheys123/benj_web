@@ -1,0 +1,29 @@
+.classes__nav {
+	.classes__user {
+		display: flex;
+		width: 25%;
+		justify-content: space-between;
+	}
+
+	.classes__buttons {
+		display: flex;
+		button {
+			text-transform: none;
+			padding: 0.2rem auto;
+			height: 2.2rem;
+			margin: 0 0.5rem;
+		}
+	}
+	.classes__avatar {
+		margin: 0 0.8rem;
+		background: rgb(186, 13, 212);
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.classes__mainpage {
+	height: 100vh;
+	width: 100vw;
+}

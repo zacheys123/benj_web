@@ -9,6 +9,7 @@ import ArchiveIcon from '@mui/icons-material/Archive';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useNavigate } from 'react-router-dom';
 
 const StyledMenu = styled((props) => (
 	<Menu
@@ -63,6 +64,7 @@ export default function CustomizedMenus() {
 		setAnchorEl(null);
 	};
 
+	const nav = useNavigate();
 	return (
 		<>
 			<Button
@@ -101,7 +103,13 @@ export default function CustomizedMenus() {
 					Change Theme
 				</MenuItem>
 				<Divider sx={{ my: 0.5 }} />
-				<MenuItem onClick={handleClose} disableRipple>
+				<MenuItem
+					onClick={() => {
+						handleClose();
+						nav('/pages/enroll-classes');
+					}}
+					disableRipple
+				>
 					<ArchiveIcon />
 					Enroll for classes
 				</MenuItem>
