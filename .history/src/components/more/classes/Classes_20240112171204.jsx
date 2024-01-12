@@ -117,7 +117,7 @@ const Classes = () => {
 										<option value="advance">Advanced</option>
 									</select>
 									<select name="" id="">
-										<option>- - -Checkout Classes </option>
+										<option>- - - </option>
 										<option value="piano">Piano Classes</option>
 										<option value="guitar">Guitar Lessons</option>
 										<option value="vocal">Vocal Lessons</option>{' '}

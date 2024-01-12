@@ -111,13 +111,13 @@ const Classes = () => {
 									/>
 									<input type="text" placeholder="Tel no" />
 									<select name="" id="">
-										<option>- - - Experience</option>
+										<option>- - - Experirnce</option>
 										<option value="beginner">Beginner </option>
 										<option value="inter">Intermediate</option>{' '}
 										<option value="advance">Advanced</option>
 									</select>
 									<select name="" id="">
-										<option>- - -Checkout Classes </option>
+										<option>- - - </option>
 										<option value="piano">Piano Classes</option>
 										<option value="guitar">Guitar Lessons</option>
 										<option value="vocal">Vocal Lessons</option>{' '}

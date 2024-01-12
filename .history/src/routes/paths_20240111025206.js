@@ -13,7 +13,7 @@ export const PATH_DASHBOARD = {
 		home: path(ROOTS_DASHBOARD, 'home'),
 		about: path(ROOTS_DASHBOARD, 'about'),
 		contact: path(ROOTS_DASHBOARD, 'pages/contact'),
-		classes: path(ROOTS_DASHBOARD, 'more/enroll-classes'),
+		classes: path(ROOTS_DASHBOARD, 'pages/enroll-classes'),
 		reset: path(ROOTS_DASHBOARD, 'pages/reset'),
 	},
 };

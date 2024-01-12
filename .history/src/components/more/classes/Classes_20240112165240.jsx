@@ -8,11 +8,10 @@ const Classes = () => {
 	const [payment, setPayment] = useState(false);
 	const [enrol, setEnroll] = useState(false);
 	const [modal, setModal] = useState(true);
-	const [personal, setPersonal] = useState(false);
 	const [days, setDays] = useState('');
 	const [getdays, setGetDays] = useState([]);
 	function handlePayment() {
-		setPersonal(true);
+		setModal(false);
 		setPayment(true);
 	}
 	function handleEnrol() {
@@ -56,16 +55,7 @@ const Classes = () => {
 				<Box sx={{ display: 'flex', flexDirection: 'column' }}>
 					N/B:To be Enrolled to any class you have to register aas aa
 					member first.
-					<Button
-						variant="contained"
-						onClick={() => {
-							setPayment(false);
-							setModal(false);
-							setEnroll(false);
-						}}
-					>
-						Enroll to Any class
-					</Button>
+					<Button variant="contained">Enroll to Any class</Button>
 				</Box>
 			</Box>
 			<div
@@ -78,25 +68,12 @@ const Classes = () => {
 			<Box className="classes__rightside"></Box>
 			<Box className="classes__modal">
 				-
-				{!modal && (
+				{modal && (
 					<Box className="classes__modalform">
-						<Box className="header">
-							{' '}
-							<Typography variant="h5">Enroll here</Typography>
-							<span
-								onClick={() => {
-									setModal(true);
-									setPayment(true);
-									setPersonal(false);
-									setEnroll(true);
-								}}
-							>
-								&times;
-							</span>
-						</Box>
+						<Typography variant="h5">Enroll here</Typography>
 
 						<form action="">
-							{!personal && (
+							{modal && (
 								<div>
 									<Typography
 										variant="body1"
@@ -111,13 +88,13 @@ const Classes = () => {
 									/>
 									<input type="text" placeholder="Tel no" />
 									<select name="" id="">
-										<option>- - - Experience</option>
-										<option value="beginner">Beginner </option>
+										<option>Experience</option>
+										<option value="beginner">Piano Classes</option>
 										<option value="inter">Intermediate</option>{' '}
 										<option value="advance">Advanced</option>
 									</select>
 									<select name="" id="">
-										<option>- - -Checkout Classes </option>
+										<option>Checkout Classes</option>
 										<option value="piano">Piano Classes</option>
 										<option value="guitar">Guitar Lessons</option>
 										<option value="vocal">Vocal Lessons</option>{' '}

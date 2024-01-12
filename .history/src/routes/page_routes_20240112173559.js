@@ -24,13 +24,4 @@ const Classes = Loadable(
 
 const Reset = Loadable(lazy(() => import('../pages/Reset')));
 
-export {
-	Home,
-	Page404,
-	About,
-	Reset,
-	Contact,
-	Classes,
-	Register,
-	Login,
-};
+export { Home, Page404, About, Reset, Contact, Classes };

@@ -106,7 +106,7 @@ export default function CustomizedMenus() {
 				<MenuItem
 					onClick={() => {
 						handleClose();
-						nav('/more/enroll-classes');
+						nav('/pages/enroll-classes');
 					}}
 					disableRipple
 				>

@@ -12,21 +12,6 @@
 		justify-content: center;
 
 		.classes__modalform {
-			.header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				span {
-					color: red;
-					font-size: 2rem;
-					font-weight: bold;
-					transition: all 0.4 e3ase-out;
-					&:hover {
-						color: rgb(232, 161, 18);
-						cursor: pointer;
-					}
-				}
-			}
 			position: absolute;
 			width: 70%;
 			box-shadow: 0px 0px 7px #555;
@@ -53,12 +38,8 @@
 						outline: none;
 						border: 1px solid rgb(239, 237, 237);
 						opacity: 0.4;
-						cursor: none;
+						pointer-events: none;
 					}
-				}
-				.active {
-				}
-				.inactive {
 				}
 			}
 			.classes__enrol {

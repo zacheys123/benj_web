@@ -15,16 +15,8 @@
 			.header {
 				display: flex;
 				justify-content: space-between;
-				align-items: center;
 				span {
-					color: red;
 					font-size: 2rem;
-					font-weight: bold;
-					transition: all 0.4 e3ase-out;
-					&:hover {
-						color: rgb(232, 161, 18);
-						cursor: pointer;
-					}
 				}
 			}
 			position: absolute;
